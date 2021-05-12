@@ -1,2 +1,2 @@
 # CoderHouse_Repo
-CoderHouse repository
+Created CoderHouse repository for uploading project
