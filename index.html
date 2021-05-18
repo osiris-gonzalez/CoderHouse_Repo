@@ -1,17 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrega GIT</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Entrega Desafío GIT</h1>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="En Samadhi trabajamos con la filosofía Ayurveda, buscando sanar mente, cuerpo y espíritu. Nuestros productos están especialmente creados con nuestros propios ingredientes, cultivados en nuestro jardín. Nuestras terapeutas están preparadas para trabajar con todas las necesidades de nuestres clientes">
+    <meta name="keywords" content="SAMADHI, YOGA, INDIA, AYURVEDA, MEDICINA AYURVEDICA, PRODUCTOS ARTESANALES, VELAS ARTESANALES, RUNAS VIKINGAS, MASAJE AYURVEDA, MASAJISTA, MEDICINA ORIENTAL, MEDICINA ALTERNATIVA">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Samadhi - Terapia Ayurveda, Productos Artesanales, Masajes, Reiki y mucho más</title>
 
-    <img src="./git.png" alt="Logo GIT">
-    <img src="./git2.png" alt="segunda imagen GIT">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="stylesheet" href="./scss/combined.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
     
-</body>
-</html>
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body>
+    
+<header>
+  <a href=""></a>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <div class="Logo">
+        <img src="./Imagenes/Samadhi_logo.jpg" width="100px" height="100px" alt="Samadhi Logo">
+      </div>
+      <a href="./index.html" class="navbar-brand" href="#">Samadhi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a href="./productos.html" class="nav-link active" aria-current="page" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a href="./servicios.html" class="nav-link active" aria-current="page" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a href="./terapia.html" class="nav-link active" aria-current="page" href="#">Terapia Ayurveda</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contacto.html" class="nav-link active" aria-current="page" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url(./Imagenes/Productos.jpg);">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Productos Naturales</h1>
+            <p>Nuestros productos son 100% elaborados por nosotres. Con ingredientes naturales, cultivados en nuestro jardín. Elegimos cada ingrediente para lograr armonía en nuestros aromas</p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.tiendanube.com/" target="_blank">Ir a la tienda</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url(./Imagenes/Servicios.jpg);">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Servicios Profesionales</h1>
+            <p>Trabajamos sobre el cuerpo de una manera integral, basándonos en la filosofía ayurvedica. Nuestro objetivo es restablecer el equilibrio físico, mental y espiritual según las necesidades de cada persona</p>
+            <p><a class="btn btn-lg btn-primary" href="./servicios.html">Saber más</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url(./Imagenes/ingredientes.jpg);">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Terapia Ayurveda</h1>
+            <p>La terapia trabaja sobre el cuerpo de cada persona, haciendo un tratamiento único que incluye dieta y medicamentos caseros. Trabajamos con cada cuerpo mente y espíritu de manera personalizada, con un seguimiento constante. </p>
+            <p><a class="btn btn-lg btn-primary" href="#">Contactar a una terapeuta</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+
+    <!-- START THE FEATURETTES -->
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Terapia Ayurveda <span class="text-muted">Empezá a sentirte diferente.</span></h2>
+        <p class="lead">Todo eso que te molesta, te duele o querés cambiar, tiene una respuesta. Con nuestra terapia podemos encontrar una solución. No es magia, es un trabajo cotidiano.</p>
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="-/Imagenes/Dietas.jpg" alt=""><rect width="100%" height="100%" fill="#eee"/></svg> -->
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Servicios personalizados <span class="text-muted">para lo que vos necesites</span></h2>
+        <p class="lead">Todos nuestros servicios son diferentes para cada paciente. No hay cuerpos ni mentes ni espiritus iguales.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Dietas especialmente diseñadas: <span class="text-muted">Cada persona es distinta </span></h2>
+        <p class="lead">Estudiamos las necesidades de cada persona y en base a eso, realizamos dietas específicas al tratamiento indicado.</p>
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="./Imagenes/Dietas.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+    <!-- FORMULARIO -->
+
+    <form>
+      <h2>Si querés tener toda tu información (historia clínica, turnos, recetas) en nuestra plataforma, dejanos tu mail te avisamos cuando lo tengamos listo!</h2><br>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Nombre y Apellido</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre y Apellido">
+      </div><br>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Tu email</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="ejemplo@exemplo.com">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" checked class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Quiero novedades!</label><br>
+      </div><br>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+  </div><!-- /.container -->
+
+  <hr class="featurette-divider">
+  <footer class="container">
+    <p class="float-end"><a href="#">Volver al inicio</a></p>
+    <p>Samadhi <span class="text-muted">Empezá a sentirte diferente.</span> &middot; <a href="https://www.instagram.com/yuyo_verde/">Instagram</a> &middot; <a href="https://www.facebook.com">Facebook</a></p>
+  </footer>
+  </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

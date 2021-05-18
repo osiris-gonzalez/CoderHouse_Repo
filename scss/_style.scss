@@ -1,0 +1,235 @@
+/* SELECTOR UNIVERSAL */
+*{
+  margin:0;
+  padding:0;
+}
+
+$letra-color: #3d6a66;
+$bordes-color: #543a32;
+$ancho: 95%;
+$bgcolor: #f8f9fa;
+
+/* MEDIA QUERIES */ 
+@media only screen and (max-width: 600px) {
+  header{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: containerLogo containerNav;
+    justify-content: center;
+    text-decoration: none;
+    height: 100px;
+  }
+  
+  .containerLogo img{
+    width: 100%;
+    height:auto;
+  }
+  .containerNav{
+    width: 100%;
+    height:auto;
+  }
+  .containerProductos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: velas;
+  }
+}
+/* SITE STYLE */
+body{
+  margin:auto;
+  font-family:var(--bs-font-sans-serif);
+  font-size:1rem;
+  font-weight:400;
+  line-height:1.5;
+  color:#212529;
+  background-color:$bgcolor;
+  -webkit-text-size-adjust:100%;
+  -webkit-tap-highlight-color:transparent
+}
+
+/* HEADER STYLE todas las secciones*/
+// Está en carousel.scss
+
+// PRODUCTOS ESTILOS
+.productosTitulo{
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+.productos{
+  border-radius: 10px;
+  border: 2px solid #543a32;
+	padding: 20px;
+	display:flex;
+	position: relative;
+  margin: auto;
+  width: $ancho;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.productos__titulo{
+  font-size:1.5rem;
+  padding: 70px 10px;
+}
+.productos__imagen{
+  height: 200px;
+  width: 200px;
+  margin-right: 10px;
+  border-radius: 10px;
+  
+}
+.productos__parrafo{
+  line-height: 28px;
+	font-size:1rem;
+  padding: 70px 10px;
+}
+.productos__boton{
+  background-color: $bgcolor; /* Green */
+  border: 1px solid $letra-color;
+  border-radius: 1%;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.botonNegro {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  text-decoration: none;
+}
+
+.botonNegro:hover {
+  background-color: #555555;
+  color: white;
+}
+.contenedorboton{
+  display: flex;
+  justify-content: center;
+}
+
+// SERVICIOS ESTILOS
+.contenedor {
+	width: $ancho;
+	margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 100px;
+}
+.serviciosTitulo{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.servicios {
+	border-radius: 10px;
+  border: 2px solid #543a32;
+	padding: 20px;
+	display:flex;
+	position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+.servicios__titulo {
+	font-size:1.5rem;
+	margin-bottom: 20px;
+}
+
+.servicios__parrafo {
+	line-height: 28px;
+	font-size:1rem;
+}
+
+
+.servicios--derecha {
+  text-align: right;
+  
+}
+// TERAPIA ESTILOS
+.terapiaContenedor {
+	width: $ancho*1.28;
+	margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 100px;
+}
+.terapiaTitulo{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.terapiaSubtitulo{
+  color:#6c757d!important;
+  margin-bottom: 20px;
+}
+
+.terapia {
+	padding: 20px;
+	display:flex;
+	position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+.terapia__titulo {
+	font-size:1.5rem;
+	margin-bottom: 10px*2;
+}
+
+.terapia__parrafo {
+	line-height: 28px;
+	font-size:1rem;
+}
+
+
+.terapia--derecha {
+  text-align: right;
+  
+}
+
+.divisor{
+  hr{
+    color: $letra-color;
+    background-color: currentColor;
+    border: 0;
+    opacity: .25;
+  }
+}
+
+// BUCLES
+
+@for $t from 1 through 6{
+  h#{$t} {
+    font-size: 8em / $t;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+
+// EACH
+@each $productos in velas runas aceites cremas {
+  .#{$productos} {
+    background-image: url('/Imagenes/#{$productos}.jpg');
+  }
+}
+
+.formTitulo{
+  margin-top: 150px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.myForm{
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
